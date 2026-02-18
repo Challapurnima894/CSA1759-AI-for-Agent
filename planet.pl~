@@ -1,0 +1,14 @@
+%define some facts about planets and their properties
+planet(mercury, rocky,small,hot,closest_to_sun).
+planet(venus,rocky,small,hot,second_closet_to_sun).
+planet(earth,rocky,medium,temperature,third_closet_to_sun).
+planet(mars,rocky,small,cold,fourth_closet_to_sun).
+planet(jupiter,gas_gaint,large,cold, fifth_closet_to_sun).
+planet(saturn,gas_gaint,large,cold,sixth_closet_to_sun).
+planet(uranus,ice_gaint,large,cold,seventh_closet_to_sun).
+planet(neptune,ice_gaint,large,cold,eigth_closet_to_sun).
+%define a predicate to look up a planet`s properties by name
+planet_properties(Name, Type, Size, Temperature, Position) :-
+planet(Name, Type, Size, Temperature, Position).
+
+

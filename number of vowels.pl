@@ -1,0 +1,11 @@
+vowel(a).
+vowel(e).
+vowel(i).
+vowel(o).
+vowel(u).
+count-vowels([],o),
+    count-vowels([H]/T,N):-
+    vowel(H),
+    count-vowels([H/T]N):-
+    1+vowel(H),
+    count-vowel(T,N):
